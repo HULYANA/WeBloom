@@ -1,0 +1,367 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #000000;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 20px; 
+    overflow: hidden;
+}
+
+.login-container{
+    text-align: center;
+}
+
+.login-logo{
+    width:80%;
+    height: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="firstname"],
+input[type="lastname"] {
+    font-size: 1vw;
+    width: 68%;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    border-radius: 0; 
+    text-align: center;
+    outline: none; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: ease-out 1s;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #060505;
+    opacity: 1;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: transparent; 
+    transition: ease-out 0.25s;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    font-size: 1vw;
+    color: white;
+    border: none;
+    padding: 0.75vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 5px;
+    margin-top: 5vw;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+.message {
+    margin-top: 10px;
+    color: red;
+}
+.login-container,
+.login-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.login-image img {
+    width: 110%;
+    height: auto;
+    border-radius: 5px;
+    border: 1rem solid #000000; 
+    object-fit: cover;
+    max-height: 50%;
+}
+
+.signup-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#register-link {
+    color: #efa9fa;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+    color: #ed7bff;
+}
+
+#close-modal {
+    font-size: 1.2rem;
+}
+
+#close-modal a {
+    color: #efa9fa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#close-modal a:hover {
+    text-decoration: underline;
+    color: #ed7bff;
+}
+
+#close-modal a:focus {
+    outline: none;
+    color: #ed7bff;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+select {
+    font-size: 1vw;
+    width: 91%;
+    margin-left: 1%;
+    margin-top: 5%;
+    padding: 1vw; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    text-align: center; 
+}
+
+select:focus {
+    border-color: rgb(0, 0, 0);
+    background-color: #fff;
+    transition: ease-out 0.25s;
+}
+
+select option {
+    color: #060505;
+}
+select:active {
+    background-color: #eaeaea;
+}
+#reg-email {
+    font-size: 1vw;
+    width: 86%;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    text-align: center;
+    outline: none;
+}
+
+#reg-email:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: ease-out 1s;
+}
+
+#reg-email::placeholder {
+    color: #060505;
+    opacity: 1;
+}
+
+#reg-email:focus::placeholder {
+    color: transparent;
+    transition: ease-out 0.25s;
+}
+.name-container {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    gap: 1vw;
+}
+
+.name-container input {
+    font-size: 1vw;
+    width: 100%;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0; 
+    text-align: center;
+    outline: none;
+}
+
+.name-container input:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: ease-out 1s;
+}
+
+.name-gender-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5vw;
+    padding-left: 5%;
+    width: 90.5%;
+}
+
+.name-gender-container select {
+    font-size: 1vw;
+    margin: 1vw 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 32%; 
+    text-align: center;
+    outline: none;
+}
+
+.name-gender-container select:focus {
+    border-color: rgb(0, 0, 0);
+    background-color: #fff;
+    transition: ease-out 0.25s;
+}
+
+.name-gender-container input {
+    font-size: 1vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 68%;
+    text-align: center;
+    outline: none;
+}
+
+.name-gender-container input:focus {
+    border-color: rgb(0, 0, 0);
+    background-color: #fff;
+    transition: ease-out 0.25s;
+}
+#reg-username {
+    font-size: 1vw;
+    width: 100%;
+    padding: 1vw;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    text-align: center;
+    outline: none;
+}
+
+#reg-username:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: ease-out 1s;
+}
+
+#reg-username::placeholder {
+    color: #060505;
+    opacity: 1;
+}
+
+#reg-username:focus::placeholder {
+    color: transparent;
+    transition: ease-out 0.25s;
+}
+
+.password-container {
+    position: relative;
+    width: 91%;
+}
+
+#reg-password {
+    margin-top: 5%;
+    margin-left: 5.5%;
+    width: 95.5%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; 
+    color: #555;
+}
+
+input[type="submit"].reg-submit {
+    justify-content: center;
+    text-align: center;
+    background-color: #efa9fa;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    padding: 1rem 7.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"].reg-submit:hover {
+    background-color: #ed7bff;
+}
